@@ -11,11 +11,10 @@ def test_app():
         page = context.new_page()
         url = "http://localhost:8000"
         page.goto(url)
-        
+
         # Picked 5 as an arbitrary number
         for i in range(5):
-            page.reload()
             time.sleep(2)
-            i += 1
+            page.reload()
 
         browser.close()
