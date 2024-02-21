@@ -9,11 +9,13 @@ def test_app():
         browser = playwright.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
-        page.goto("http://localhost:8000")
-        iter = 1
-        max = randrange(4, 9)
-        while iter <= max:
+        url = "http://localhost:8000"
+        page.goto(url)
+        
+        # Picked 5 as an arbitrary number
+        for i in range(5):
             page.reload()
-            iter += 1
             time.sleep(2)
+            i += 1
+
         browser.close()
