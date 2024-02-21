@@ -9,7 +9,7 @@ def test_app():
         browser = playwright.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
-        page.goto(os.environ.get("APP_URL"))
+        page.goto("http://localhost:8000")
         iter = 1
         max = randrange(4, 9)
         while iter <= max:
