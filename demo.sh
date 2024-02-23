@@ -120,7 +120,7 @@ function intro() {
 
     press_to_continue_and_clear
 
-    echo -e "$(gumtext "Finally, the demo orchestrator looks like this 👇")"
+    echo -e "$(gumtext "Finally, the test/demo orchestrator looks like this 👇")"
     sleep 2
     bat test_app.py
 
