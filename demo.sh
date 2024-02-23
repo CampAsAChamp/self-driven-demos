@@ -97,7 +97,7 @@ function intro() {
     press_to_continue_and_clear
 
     echo -e "$(gumtext "The directory structure is quite simple for this demo 🗂️")"
-    eza -aT --color=always --group-directories-first --icons --ignore-glob="node_modules*|.venv*|.pytest_cache*|__pycache__*|.git*|.dockerignore"
+    eza -aT --color=always --group-directories-first --icons --ignore-glob="node_modules*|.venv*|.pytest_cache*|__pycache__*|.git*|.dockerignore|.intuitgithookrc"
     press_to_continue_and_clear
 
     echo -e "$(gumtext "The application is a Flask app that looks like this 👇")"
