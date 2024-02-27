@@ -1,4 +1,4 @@
-# Self-driven demo about self-driven demos
+# Self Driven Demos
 
 Needs the following dependencies installed
 - gum
